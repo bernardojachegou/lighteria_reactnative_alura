@@ -1,26 +1,21 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {
   FONT_FAMILY_BOLD,
   FONT_SIZE_M,
   FONT_SIZE_XXL,
-  SECONDARY_COLOR,
   TEXT_COLOR,
   PRIMARY_COLOR,
   FONT_FAMILY_SEMIBOLD,
 } from '../../../../styles/styles';
+import {Bag} from '../../../../Components/bag';
 
 const Header = () => {
   return (
     <>
       <View style={styles.titleContainer}>
         <Text style={styles.title}>Lighteria</Text>
-        <View style={styles.bagImageContainer}>
-          <Image
-            source={require('../../../../assets/images/icone-sacola.png')}
-            style={styles.bagImage}
-          />
-        </View>
+        <Bag />
       </View>
       <View style={styles.descriptionContainer}>
         <View style={styles.breakLine} />
@@ -40,19 +35,10 @@ const styles = StyleSheet.create({
     paddingVertical: 24,
     paddingHorizontal: 6,
   },
-  bagImageContainer: {
-    backgroundColor: SECONDARY_COLOR,
-    padding: 18,
-    borderRadius: 30,
-  },
   title: {
     fontFamily: FONT_FAMILY_BOLD,
     fontSize: FONT_SIZE_XXL,
     color: TEXT_COLOR,
-  },
-  bagImage: {
-    height: 30,
-    width: 30,
   },
   descriptionContainer: {
     paddingHorizontal: 6,

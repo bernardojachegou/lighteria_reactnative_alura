@@ -1,5 +1,6 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {
   FONT_FAMILY_SEMIBOLD,
   FONT_SIZE_S,
@@ -7,12 +8,34 @@ import {
   TEXT_COLOR,
 } from '../../../../styles/styles';
 
-export const Product = ({imagem, titulo}) => {
+export const Product = ({
+  imagem,
+  titulo,
+  estudio,
+  itemDesc,
+  itemName,
+  preco,
+  id,
+}) => {
+  const navigation = useNavigation();
+
   return (
-    <View style={styles.productContainer}>
+    <TouchableOpacity
+      style={styles.productContainer}
+      onPress={() =>
+        navigation.push('ProductDetails', {
+          itemDesc,
+          itemName,
+          imagem,
+          estudio,
+          titulo,
+          id,
+          preco,
+        })
+      }>
       <Image source={imagem} style={styles.image} resizeMode="contain" />
       <Text style={styles.title}>{titulo}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
