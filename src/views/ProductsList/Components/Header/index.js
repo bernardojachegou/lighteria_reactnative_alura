@@ -1,5 +1,14 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
+import {
+  FONT_FAMILY_BOLD,
+  FONT_SIZE_M,
+  FONT_SIZE_XXL,
+  SECONDARY_COLOR,
+  TEXT_COLOR,
+  PRIMARY_COLOR,
+  FONT_FAMILY_SEMIBOLD,
+} from '../../../../styles/styles';
 
 const Header = () => {
   return (
@@ -28,28 +37,29 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 24,
-    paddingBottom: 24,
+    paddingVertical: 24,
+    paddingHorizontal: 6,
   },
   bagImageContainer: {
-    backgroundColor: '#fff',
+    backgroundColor: SECONDARY_COLOR,
     padding: 18,
     borderRadius: 30,
   },
   title: {
-    fontFamily: 'OpenSans-ExtraBold',
-    fontSize: 28,
+    fontFamily: FONT_FAMILY_BOLD,
+    fontSize: FONT_SIZE_XXL,
+    color: TEXT_COLOR,
   },
   bagImage: {
     height: 30,
     width: 30,
   },
   descriptionContainer: {
-    paddingHorizontal: 24,
+    paddingHorizontal: 6,
   },
   breakLine: {
     borderWidth: 0.5,
-    borderColor: '#A1A5AA',
+    borderColor: TEXT_COLOR,
   },
   textContainer: {
     flexDirection: 'row',
@@ -58,8 +68,9 @@ const styles = StyleSheet.create({
   },
   descriptionText: {
     padding: 34,
-    backgroundColor: '#F4F0F4',
-    fontSize: 16,
+    backgroundColor: PRIMARY_COLOR,
+    fontSize: FONT_SIZE_M,
+    fontFamily: FONT_FAMILY_SEMIBOLD,
   },
 });
 

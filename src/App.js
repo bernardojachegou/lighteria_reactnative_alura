@@ -1,19 +1,36 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import ProductsList from './views/ProductsList/Components/ProductsList';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import {PRIMARY_COLOR} from './styles/styles';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <ProductsList />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <Stack.Navigator
+          screenOptions={{
+            cardStyle: {backgroundColor: PRIMARY_COLOR},
+          }}
+          initialRouteName="ProductsList">
+          <Stack.Screen
+            name="ProductsList"
+            component={ProductsList}
+            options={{headerShown: false}}
+          />
+        </Stack.Navigator>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F4F0F4',
+    backgroundColor: PRIMARY_COLOR,
   },
 });
 

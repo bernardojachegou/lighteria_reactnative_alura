@@ -1,5 +1,11 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
+import {
+  FONT_FAMILY_SEMIBOLD,
+  FONT_SIZE_S,
+  SECONDARY_COLOR,
+  TEXT_COLOR,
+} from '../../../../styles/styles';
 
 export const Product = ({imagem, titulo}) => {
   return (
@@ -13,7 +19,7 @@ export const Product = ({imagem, titulo}) => {
 const styles = StyleSheet.create({
   productContainer: {
     height: 168,
-    backgroundColor: '#fff',
+    backgroundColor: SECONDARY_COLOR,
     borderRadius: 10,
     flex: 1,
     justifyContent: 'center',
@@ -22,9 +28,9 @@ const styles = StyleSheet.create({
   },
   title: {
     marginTop: 8,
-    fontFamily: 'OpenSans-SemiBold',
-    fontSize: 14,
-    color: '#848486',
+    fontFamily: FONT_FAMILY_SEMIBOLD,
+    fontSize: FONT_SIZE_S,
+    color: TEXT_COLOR,
   },
   image: {
     height: 64,
