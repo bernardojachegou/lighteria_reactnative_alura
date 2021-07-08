@@ -1,5 +1,5 @@
 import {useNavigation} from '@react-navigation/native';
-import React from 'react';
+import React, {useContext} from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
 import {Button} from '../../../../Components/button';
 import {
@@ -12,6 +12,7 @@ import {
   SECONDARY_COLOR,
 } from '../../../../styles/styles';
 import {moneyFormat} from '../../../../utils/utils';
+import {DataContext} from '../../../../provider';
 
 export const ItemDescription = ({
   imagem,
@@ -22,7 +23,7 @@ export const ItemDescription = ({
   preco,
   id,
 }) => {
-  const navigation = useNavigation();
+  const {addItem} = useContext(DataContext);
   return (
     <View style={styles.itemContainer}>
       <View style={styles.itemPosition}>
@@ -41,7 +42,16 @@ export const ItemDescription = ({
             <Button
               titulo={'COMPRAR'}
               width={'100%'}
-              onPress={() => navigation.push('Checkout')}
+              onPress={() => {
+                addItem({
+                  estudio,
+                  itemName,
+                  titulo,
+                  id,
+                  imagem,
+                  preco,
+                });
+              }}
             />
           </View>
         </View>

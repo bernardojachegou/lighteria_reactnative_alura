@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {
-  LIGHTBLUE,
   WHITE,
   FONT_FAMILY_SEMIBOLD,
   FONT_SIZE_M,
@@ -28,5 +27,6 @@ const styles = StyleSheet.create({
     fontFamily: FONT_FAMILY_SEMIBOLD,
     fontSize: FONT_SIZE_M,
     color: WHITE,
+    textAlign: 'center',
   },
 });
