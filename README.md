@@ -3,9 +3,9 @@
 </h1>
 
 <h2 align="center">
-  <img alt="App" width="300px" src="https://user-images.githubusercontent.com/47263354/124984529-b625e480-e00f-11eb-9f80-196bd5b949ff.png"/>
-  <img alt="App" width="300px" src="https://user-images.githubusercontent.com/47263354/124984608-cf2e9580-e00f-11eb-8602-8dcafb0d9067.png"/>
-  <img alt="App" width="300px" src="https://user-images.githubusercontent.com/47263354/124983989-0fd9df00-e00f-11eb-9a61-843eb189e3c0.png"/>
+  <img alt="App" width="250px" src="https://user-images.githubusercontent.com/47263354/124984529-b625e480-e00f-11eb-9f80-196bd5b949ff.png"/>
+  <img alt="App" width="250px" src="https://user-images.githubusercontent.com/47263354/124984608-cf2e9580-e00f-11eb-8602-8dcafb0d9067.png"/>
+  <img alt="App" width="250px" src="https://user-images.githubusercontent.com/47263354/124983989-0fd9df00-e00f-11eb-9a61-843eb189e3c0.png"/>
 </h2>
 
 ## 📱 About the project
