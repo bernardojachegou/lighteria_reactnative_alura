@@ -41,4 +41,22 @@ The use can choose any it likes, add to the cart and finish the shopping.
   <li>VSCode</li>
 </ul>
 
+## 🔌 Building the project:
+
+```bash
+# Clone this repository
+$ git clone bernardojachegou/lighteria_reactnative_alura
+
+# Go into the folder
+$ cd bernardojachegou/lighteria_reactnative_alura
+
+# Install dependencies
+$ npm install
+
+# Run the project
+$ npx react-native run-ios/run-android
+
+# If you get stuck, please contact me! :D
+```
+
 Created by me :wave: [Contact](https://www.linkedin.com/in/bernardojachegou/)
