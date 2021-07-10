@@ -48,7 +48,7 @@ The use can choose any it likes, add to the cart and finish the shopping.
 $ git clone bernardojachegou/lighteria_reactnative_alura
 
 # Go into the folder
-$ cd bernardojachegou/lighteria_reactnative_alura
+$ cd lighteria_reactnative_alura
 
 # Install dependencies
 $ npm install
